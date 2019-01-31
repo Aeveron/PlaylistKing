@@ -8,12 +8,14 @@
 <script>
 import Homepage from '@/components/Homepage';
 import Navbar from '@/components/Navbar';
+import PlaylistSelect from '@/components/playlist-control/PlaylistSelect';
 
 export default {
   name: 'App',
   components: {
     Homepage,
-    Navbar
+    Navbar,
+    PlaylistSelect
   }
 }
 </script>

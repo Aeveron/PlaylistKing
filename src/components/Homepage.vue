@@ -1,7 +1,6 @@
 <template>
   <div>
     <navbar/>
-    
     <playlist-select></playlist-select>
     <video-player></video-player>
   </div>

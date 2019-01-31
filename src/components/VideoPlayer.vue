@@ -4,6 +4,7 @@
       <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
    <h3>{{this.activeVideo.title}}</h3>
+   <hr>
     </div>
     <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">
         <div class="thumbnail-img">
@@ -95,10 +96,12 @@ export default {
 .thumbnail {
   display: flex;
   width: 45%;
+  float: left;
 }
 .thumbnail img{
     width:168px;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .thumbnail-info{
@@ -127,17 +130,14 @@ p{
 
 .video-container{
     margin-right:40px;
+    margin-left:10px;
 }
 
 .row{
     display:flex;
     justify-content:space-between;
 }
-
-button{
-    background:#D0021B;
-    color:white;
-    border:none;
-    padding:10px 20px;
+hr{
+    border: 1px solid black;
 }
 </style>

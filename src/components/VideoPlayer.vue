@@ -3,7 +3,7 @@
     <div class="video-container">
       <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media"
         allowfullscreen></iframe>
-   <h3>{{this.activeVideo.title}}</h3>
+   <h3 style="margin-top: 10px;">{{this.activeVideo.title}}</h3>
    <hr>
     </div>
     <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">
@@ -102,6 +102,7 @@ export default {
     width:168px;
     margin-left: 10px;
     margin-top: 10px;
+    
 }
 
 .thumbnail-info{

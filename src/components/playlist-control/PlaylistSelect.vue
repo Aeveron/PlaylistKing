@@ -25,5 +25,6 @@ export default {
 select{
     margin-top: 7%;
     width: 40%;
+    margin-left: 10px;
 }
 </style>

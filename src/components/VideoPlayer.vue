@@ -94,13 +94,15 @@ export default {
 }
 .thumbnail {
   display: flex;
+  width: 45%;
 }
 .thumbnail img{
     width:168px;
+    margin-left: 10px;
 }
 
 .thumbnail-info{
-    margin-left:20px;
+    margin-left:10px;
 }
 
 .thumbnail h3{

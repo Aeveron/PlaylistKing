@@ -111,6 +111,7 @@ export default {
 
 .thumbnail h3{
     font-size:16px;
+    margin-top: 10px;
 }
 
 h3,

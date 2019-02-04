@@ -7,7 +7,7 @@
    <hr>
     </div>
     <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">     
-  <b-button @click="removeSong(video)">X</b-button>
+  <b-button size="md" type="submit" @click="removeSong(video)">X</b-button>
         <div class="thumbnail-img"> 
           <img :src="video.thumbnail" />
         </div>

@@ -90,7 +90,7 @@ export default {
       },
        removeSong: function(index) {
       this.videos.splice(index, 1);
-      console.log("You removed an element!");
+      console.log("You removed an element!!!");
       
     }
   }

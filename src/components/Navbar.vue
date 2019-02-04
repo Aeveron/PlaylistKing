@@ -54,5 +54,8 @@
     color: orange;
     padding: 5px;
 }
+.nav-bar{
+  margin: 0px 10px;
+}
 
 </style>

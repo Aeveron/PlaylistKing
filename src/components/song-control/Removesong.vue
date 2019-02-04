@@ -1,20 +1,20 @@
 <template>
 <div>
-    <b-button>X</b-button>
+    <b-button @click="removeSong(index)">X</b-button>
 </div>
 </template>
 
 <script>
-import Videos from "@/components/VideoPlayer";
+import vids from '@/components/VideoPlayer';
 export default {
   data() {
     return {
-      currentVideo: Videos[0]
+      
     };
   },
   methods: {
     removeSong: function(index) {
-      this.currentVideo.splice(index, 1);
+      this.vids.splice(index, 1);
     }
   }
 };

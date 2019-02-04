@@ -6,8 +6,9 @@
    <h3 style="margin-top: 10px;">{{this.activeVideo.title}}</h3>
    <hr>
     </div>
-    <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">
-        <div class="thumbnail-img">
+    <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">     
+  <b-button @click="removeSong(video)">X</b-button>
+        <div class="thumbnail-img"> 
           <img :src="video.thumbnail" />
         </div>
         <div class="thumbnail-info">
@@ -20,6 +21,8 @@
 </template>
 
 <script>
+import Removesong from '@/components/song-control/Removesong';
+
 let videos = [
   {
     id: 1,
@@ -84,7 +87,12 @@ export default {
       chooseVideo(video){
           this.activeVideo = video;
           video.views += 1;
-      }
+      },
+       removeSong: function(index) {
+      this.videos.splice(index, 1);
+      console.log("You removed an element");
+      
+    }
   }
 }
 </script>
@@ -100,8 +108,7 @@ export default {
 }
 .thumbnail img{
     width:168px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px 10px;
     
 }
 
@@ -141,5 +148,10 @@ p{
 }
 hr{
     border: 1.5px solid black;
+}
+button{
+  margin: 10px;
+  width: 10%;
+  height: 5%;
 }
 </style>

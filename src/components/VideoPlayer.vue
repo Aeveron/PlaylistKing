@@ -13,8 +13,8 @@
         </div>
         <div class="thumbnail-info">
           <h3>{{video.title}}</h3>
-          <p>{{video.creator}}</p>
-          <p class="thumbnail-views">{{video.views}} Views</p>
+          <!-- <p>{{video.creator}}</p>
+          <p class="thumbnail-views">{{video.views}} Views</p> -->
         </div>
     </div>
   </div>
@@ -105,6 +105,10 @@ export default {
   display: flex;
   width: 45%;
   float: left;
+  
+}
+.thumbnail:hover{
+  cursor: pointer;
 }
 .thumbnail img{
     width:168px;

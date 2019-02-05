@@ -24,7 +24,7 @@
       <b-collapse is-nav id="nav_collapse">
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-form action="http://www.youtube.com/results" method="get" target="_blank">
+          <b-nav-form action="http://www.youtube.com/results" method="get" target="">
             <b-form-input name="search_query" maxlength="128" size="md" class="mr-sm-3" type="text" placeholder="Search for a song or vid" />
             <b-button size="md" class="my-2 my-sm-0" type="submit" variant="warning">Search</b-button>
           </b-nav-form>

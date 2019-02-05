@@ -26,7 +26,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-form action="http://www.youtube.com/results" method="get" target="">
             <b-form-input name="search_query" maxlength="128" size="md" class="mr-sm-3" type="text" placeholder="Search for a song or vid" />
-            <b-button size="md" class="my-2 my-sm-0" type="submit" variant="warning">Search</b-button>
+            <b-button v-bind="Search" size="md" class="my-2 my-sm-0" type="submit" variant="warning">Search</b-button>
           </b-nav-form>
 
           <b-nav-item-dropdown right>
@@ -43,9 +43,18 @@
   </div>
 </template>
 
+
 <script>
+import Search from '@/components/song-control/Search';
+
   export default {
-      name: 'Navbar'
+      name: 'Navbar',
+      components: {Search},
+      data(){
+        return{
+          searchValue: ""
+        }
+      }
   };
 </script>
 

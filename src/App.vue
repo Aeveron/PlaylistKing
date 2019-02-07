@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Homepage from '@/components/Homepage';
+import Homepage from '@/components/start-pages/Homepage';
 import Navbar from '@/components/Navbar';
 import PlaylistSelect from '@/components/playlist-control/PlaylistSelect';
 

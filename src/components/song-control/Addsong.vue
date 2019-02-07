@@ -1,5 +1,8 @@
 <template>
-    
+    <div>
+
+
+    </div>
 </template>
 
 <script>
@@ -7,13 +10,13 @@ import Videos from '@/components/VideoPlayer';
 export default {
     data(){
         return{
-        newVideo: Videos[0]
+        Videos
         }
     },
     methods: {
         addSong(index) {
             try {
-                this.newVideo.splice(index + 1, 0, {});
+                this.Videos.splice(index + 1, 0, {});
             } catch(e)
             {
                 console.log(e);
@@ -24,6 +27,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

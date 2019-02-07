@@ -6,15 +6,17 @@
    <h3 style="margin-top: 10px;">{{this.activeVideo.title}}</h3>
    <hr>
     </div>
-    <div @click="chooseVideo(video)" :key="video.id" v-for="video in videos" class="thumbnail">     
+    <div @click="chooseVideo(video)" :key="video.id" v-for="(video, index) in videos" class="thumbnail">     
   <b-button size="md" type="submit" @click="removeSong(video)">X</b-button>
         <div class="thumbnail-img"> 
           <img :src="video.thumbnail" />
         </div>
         <div class="thumbnail-info">
+          <h3>{{ index + 1 }}</h3>
           <h3>{{video.title}}</h3>
           <!-- <p>{{video.creator}}</p>
           <p class="thumbnail-views">{{video.views}} Views</p> -->
+          
         </div>
     </div>
   </div>
@@ -80,7 +82,7 @@ export default {
         width: "300px",
         height: "200px"
       },
-      activeVideo: videos[0]
+      activeVideo: videos[0],
     }
   },
   methods: {

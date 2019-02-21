@@ -23,9 +23,10 @@
       >
     </div>
     <!-- <p class="textButton">Forgot your password?</p> -->
+    <p>Can't remember your login?</p>
     <b-link>Reset Password</b-link>
     <p v-if="feedback" class="red-text center">{{ feedback }}</p>
-    <div class="center" style="margin-top: 20%;">
+    <div style="margin-top: 20%;">
       <b-button class="button4" @click="login">Log in</b-button>
     </div>
     <!-- <b-button style="margin-top: 10%;" @click="signup">Create New Account</b-button> -->
